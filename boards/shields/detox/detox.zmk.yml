@@ -1,0 +1,12 @@
+file_format: "1"
+id: detox
+name: Detox
+type: shield
+url: https://github.com/leumasic/detox
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - detox_left
+  - detox_right
+

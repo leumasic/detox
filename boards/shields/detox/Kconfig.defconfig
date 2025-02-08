@@ -1,0 +1,17 @@
+if SHIELD_DETOX_LEFT
+
+# Name must be less than 16 characters long!
+config DETOX
+    default "Detox"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_DETOX_LEFT || SHIELD_DETOX_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
