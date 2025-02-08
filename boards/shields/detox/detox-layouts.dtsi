@@ -1,0 +1,56 @@
+#include <physical_layouts.dtsi>
+
+/ {
+    physical_layout0: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+
+        keys  //                     w   h    x    y     rot    rx    ry
+          // Row 1
+          = <&key_physical_attrs   100 100 -700   50    -800     0     0>
+          , <&key_physical_attrs   100 100 -600  -20    -500     0     0>
+          , <&key_physical_attrs   100 100 -480  -40       0     0     0>
+          , <&key_physical_attrs   100 100 -380  -10       0     0     0>
+          , <&key_physical_attrs   100 100 -280    0       0     0     0>
+
+          , <&key_physical_attrs   100 100  280    0       0     0     0>
+          , <&key_physical_attrs   100 100  380  -10       0     0     0>
+          , <&key_physical_attrs   100 100  480  -40       0     0     0>
+          , <&key_physical_attrs   100 100  600  -20     500     0     0>
+          , <&key_physical_attrs   100 100  700   50     800     0     0>
+
+          // Row 2
+          , <&key_physical_attrs   100 100 -685  150    -800     0     0>
+          , <&key_physical_attrs   100 100 -590   80    -500     0     0>
+          , <&key_physical_attrs   100 100 -480   60       0     0     0>
+          , <&key_physical_attrs   100 100 -380   90       0     0     0>
+          , <&key_physical_attrs   100 100 -280  100       0     0     0>
+
+          , <&key_physical_attrs   100 100  280  100       0     0     0>
+          , <&key_physical_attrs   100 100  380   90       0     0     0>
+          , <&key_physical_attrs   100 100  480   60       0     0     0>
+          , <&key_physical_attrs   100 100  590   80     500     0     0>
+          , <&key_physical_attrs   100 100  685  150     800     0     0>
+
+          // Row 3
+          , <&key_physical_attrs   100 100 -670  250    -800     0     0>
+          , <&key_physical_attrs   100 100 -580  180    -500     0     0>
+          , <&key_physical_attrs   100 100 -480  160       0     0     0>
+          , <&key_physical_attrs   100 100 -380  190       0     0     0>
+          , <&key_physical_attrs   100 100 -280  200       0     0     0>
+
+          , <&key_physical_attrs   100 100  280  200       0     0     0>
+          , <&key_physical_attrs   100 100  380  190       0     0     0>
+          , <&key_physical_attrs   100 100  480  160       0     0     0>
+          , <&key_physical_attrs   100 100  580  180     500     0     0>
+          , <&key_physical_attrs   100 100  670  250     800     0     0>
+
+          // Thumb keys
+          , <&key_physical_attrs   100 100 -180  385    3000     0     0>
+          , <&key_physical_attrs   100 100  -90  455    4500     0     0>
+
+          , <&key_physical_attrs   100 100   90  455   -4500     0     0>
+          , <&key_physical_attrs   100 100  180  385   -3000     0     0>
+          ;
+    };
+};

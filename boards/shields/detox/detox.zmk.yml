@@ -6,6 +6,7 @@ url: https://github.com/leumasic/detox
 requires: [pro_micro]
 features:
   - keys
+  - studio
 siblings:
   - detox_left
   - detox_right
