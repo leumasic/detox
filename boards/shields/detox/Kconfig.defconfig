@@ -1,0 +1,19 @@
+if SHIELD_DETOX_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Detox"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_STUDIO
+    default y
+
+endif
+
+if SHIELD_DETOX_LEFT || SHIELD_DETOX_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
