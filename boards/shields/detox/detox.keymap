@@ -103,7 +103,7 @@
         // Positional Homerow mods for shift
         // Use faster tapping term and disable some features that may
         // cause false negatives.
-        hm_shift_l: hm_shift_l {
+        hls: hm_shift_l {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
 
@@ -118,7 +118,7 @@
             // hold-trigger-on-release;
         };
 
-        hm_shift_r: hm_shift_r {
+        hrs: hm_shift_r {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
 
@@ -194,7 +194,7 @@
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp Q         &kp W         &kp E         &kp R         &kp T           &kp Y         &kp U         &kp I         &kp O         &kp P       
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &hml LGUI A   &hml LALT S   &hml LSHIFT D &hml LCTRL F  &kp G           &hmr RCTRL H  &hmr RSHIFT J &hmr LALT K   &hmr LGUI L   &kp SEMI    
+    &hml LGUI A   &hml LALT S   &hls LSHIFT D &hml LCTRL F  &kp G           &hmr RCTRL H  &hrs RSHIFT J &hmr LALT K   &hmr LGUI L   &kp SEMI    
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N         &kp M         &kp COMMA     &kp DOT       &kp SLASH   
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
